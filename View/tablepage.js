@@ -4,7 +4,9 @@ $(document).ready(function(){
 	    url: 'http://localhost:5000/lr2get',
 	    dataType: "jsonp",
 	    headers: {
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': '*',
+
         },
 	    columns: [{
 	        field: 'Mcc',
