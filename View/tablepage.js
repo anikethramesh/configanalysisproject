@@ -1,7 +1,10 @@
 $(document).ready(function(){
 	$("#hello").text("Blah blah");
 	$('#table').bootstrapTable({
-	    url: 'http://localhost:5050/lr2get',
+	    url: 'http://localhost:5000/lr2get',
+	    headers: {
+            'Access-Control-Allow-Origin': '*'
+        },
 	    columns: [{
 	        field: 'Mcc',
 	        title: 'Mcc'

@@ -10,7 +10,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 var router = express.Router();
 router.use(express.static(__dirname+'/View'));
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use(express.static(__dirname + '/Script'));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 router.get('/',function(req,res){
 	res.sendFile(path.join(__dirname+'/View/index.html'));  
 });
