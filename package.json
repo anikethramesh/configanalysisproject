@@ -1,0 +1,21 @@
+{
+  "name": "Attempt-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "foreachasync": "^5.0.5",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0",
+    "stream": "0.0.2",
+    "string": "^3.3.3"
+  }
+}
