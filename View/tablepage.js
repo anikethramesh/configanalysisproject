@@ -2,7 +2,6 @@ $(document).ready(function(){
 	$("#hello").text("Blah blah");
 	$('#table').bootstrapTable({
 	    url: 'http://localhost:5000/lr2get',
-	    dataType: "jsonp",
 	    columns: [{
 	        field: 'Mcc',
 	        title: 'Mcc'
