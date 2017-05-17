@@ -5,7 +5,7 @@ var multer = require('multer');
 var path = require('path');
 var app = express();
 var fr = require('./fileProcessing');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 var router = express.Router();
