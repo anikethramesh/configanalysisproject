@@ -3,11 +3,6 @@ $(document).ready(function(){
 	$('#table').bootstrapTable({
 	    url: 'http://localhost:5000/lr2get',
 	    dataType: "jsonp",
-	    headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': '*',
-
-        },
 	    columns: [{
 	        field: 'Mcc',
 	        title: 'Mcc'
